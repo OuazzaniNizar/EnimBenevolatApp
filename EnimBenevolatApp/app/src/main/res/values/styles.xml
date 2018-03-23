@@ -1,0 +1,79 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/sup_fontsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <!-- Theme remplissage. -->
+    <style name="AppThemeRemplissage" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/normal_fontsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Theme affichage. -->
+    <style name="AppThemeAffichage" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/checklist_fontsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Theme des portails. -->
+    <style name="AppThemePortail" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/inf_fontsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.DeviceDefault</item>
+        <item name="DialogTitleText">@string/connexion_bd</item>
+        <item name="DialogSpotColor">@color/buttoncolor</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <!-- Theme AlerDialog. -->
+    <style name="AlerDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/bleu</item>
+        <item name="android:color">@color/bleu</item>
+        <item name="android:background">@color/blanc</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/sup_fontsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <!--Toolbar text size-->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/sup_fontsize</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

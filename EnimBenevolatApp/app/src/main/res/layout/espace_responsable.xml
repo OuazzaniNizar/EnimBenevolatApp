@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+tools:context="com.example.ensmr.enimbenevolatapp.EspaceResponsable">
+
+<include
+    layout="@layout/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_gravity="right" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_visiteur"
+                android:id="@+id/intro_respo"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="@dimen/sup_fontsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_ajout_historique">
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center"
+                    android:background="@drawable/contour" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ajout_historique"
+                    android:id="@+id/textView1"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:id="@+id/portail_ajout_contact"
+                android:onClick="buttonClick">
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ajout_contact"
+                    android:id="@+id/portail_esprit"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/portail_ajout_pv"
+                android:onClick="buttonClick">
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ajout_pv"
+                    android:id="@+id/portail_contact"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_ajout_transaction">
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/crediter_debiter"
+                    android:id="@+id/textView11"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_ajout_stock" >
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal"
+                    android:text="@string/portail_ajout_stock" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_annuaire">
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour_rose"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/annuaire_contacts"
+                    android:id="@+id/portail_membre"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_pv" >
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour_rose"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consulter_pv"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_tresorerie" >
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour_rose"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consulter_tresorerie"
+                    android:id="@+id/textView6"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_membres" >
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour_rose"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal"
+                    android:text="@string/consulter_membre" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_propositions" >
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour_rose"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView21"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal"
+                    android:text="@string/consulter_proposition" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_historique" >
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour_rose"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consulter_historique"
+                    android:id="@+id/textView23"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClick"
+                android:id="@+id/portail_stock" >
+
+                <ImageView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/contour_rose"
+                    android:textColor="@color/blanc"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_width"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView24"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:gravity="center_horizontal"
+                    android:text="@string/consulter_stock" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
+

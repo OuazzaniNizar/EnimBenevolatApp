@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ensmr.enimbenevolatapp.VisiteurDocuments">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView3"
+            android:layout_gravity="right" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/intro_documents"
+                    android:id="@+id/textView12"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="30dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/loi_aeenim"
+                    android:onClick="buttonClick">
+
+                    <ImageView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/adobe_pdf_icon"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="top|center_horizontal" />
+
+                    <TextView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/loi_aeenim"
+                        android:id="@+id/textView13"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rapport2014_2015"
+                    android:onClick="buttonClick">
+
+                    <ImageView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/adobe_pdf_icon"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="top|center_horizontal" />
+
+                    <TextView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/rapport_activite_2015"
+                        android:id="@+id/textView14"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/teambuilding2"
+                    android:onClick="buttonClick">
+
+                    <ImageView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView7"
+                        android:src="@drawable/adobe_pdf_icon"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="top|center_horizontal" />
+
+                    <TextView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/rapport_activite_teambuilding2"
+                        android:id="@+id/textView16"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/caravane4"
+                    android:onClick="buttonClick">
+
+                    <ImageView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/adobe_pdf_icon"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="top|center_horizontal" />
+
+                    <TextView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/rapport_activite_caravane4"
+                        android:id="@+id/textView15"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

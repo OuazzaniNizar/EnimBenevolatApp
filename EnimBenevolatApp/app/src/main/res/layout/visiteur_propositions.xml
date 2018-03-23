@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.ensmr.enimbenevolatapp.VisiteurPropositions">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/proposition_intro"
+                android:id="@+id/textView18"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:id="@+id/edit_text_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView29"
+                        android:src="@drawable/commande_anonyme"
+                        android:layout_margin="4dp"
+                        android:layout_gravity="center" />
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_anonymite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/anonymite"
+                        app:ms_arrowColor="@color/gris"
+                        app:ms_arrowSize="16dp"
+                        app:ms_floatingLabelColor="@color/colorAccent"
+                        app:ms_floatingLabelText="@string/choisir"
+                        app:ms_hint="@string/choisir_anonymite"
+                        app:ms_multiline="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/nom_proposition">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView24"
+                        android:src="@drawable/commande_man"
+                        android:layout_margin="4dp"
+                        android:layout_gravity="center" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/fullname_registerlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/fullname_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/nom"
+                            android:inputType="textCapWords|text"
+                            android:singleLine="true" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/telephone_proposition">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView25"
+                        android:src="@drawable/coordonnee_phone"
+                        android:layout_margin="4dp"
+                        android:layout_gravity="center" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/telephone_registerlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/telephone_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/telephone"
+                            android:singleLine="true"
+                            android:inputType="phone" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView26"
+                        android:src="@drawable/commande_choice"
+                        android:layout_margin="4dp"
+                        android:layout_gravity="center" />
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/reclamation_proposition"
+                        app:ms_arrowColor="@color/gris"
+                        app:ms_arrowSize="16dp"
+                        app:ms_floatingLabelColor="@color/colorAccent"
+                        app:ms_floatingLabelText="@string/choisir"
+                        app:ms_hint="@string/choisir"
+                        app:ms_multiline="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView17"
+                        android:src="@drawable/commande_report"
+                        android:layout_margin="4dp"
+                        android:layout_gravity="top" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/note_registerlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/note"
+                            android:singleLine="true"
+                            android:inputType="textCapSentences|textMultiLine" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/contour"
+                android:text="@string/enregister"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

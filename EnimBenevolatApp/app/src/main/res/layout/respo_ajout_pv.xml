@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+tools:context="com.example.ensmr.enimbenevolatapp.RespoAjoutPv">
+
+<include
+    layout="@layout/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView2"
+    android:layout_gravity="right">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_pv"
+                android:id="@+id/textView" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:id="@+id/nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nom"
+                    android:singleLine="true"
+                    android:inputType="textCapWords" />
+
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView26"
+                android:src="@drawable/commande_choice"
+                android:layout_margin="4dp"
+                android:layout_gravity="center" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/type_reunion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/type_reunion"
+                app:ms_arrowColor="@color/gris"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelColor="@color/colorAccent"
+                app:ms_floatingLabelText="@string/type_reunion"
+                app:ms_hint="@string/type_reunion"
+                app:ms_multiline="true"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/commande_choice"
+                android:layout_margin="4dp"
+                android:layout_gravity="center" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nb_registerlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:id="@+id/nombre_presents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombre_presents"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/n_reunion_registerlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp">
+
+                <EditText
+                    android:id="@+id/num_reunion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/num_reunion"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/commande_calendar"
+                android:layout_margin="4dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/date_reunion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_pv"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/commande_tag"
+                android:layout_margin="4dp"
+                android:layout_gravity="center" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_action_registerlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/contexte_pv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contexte_pv"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="text|textCapWords|textMultiLine|textImeMultiLine"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView17"
+                android:src="@drawable/commande_report"
+                android:layout_margin="4dp"
+                android:layout_gravity="top|center_horizontal" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/note_registerlayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:id="@+id/detail_pv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/detail_pv"
+                    android:singleLine="true"
+                    android:inputType="textCapSentences|textMultiLine" />
+
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView18"
+                android:src="@drawable/commande_report"
+                android:layout_margin="4dp"
+                android:layout_gravity="top|center_horizontal" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dist_registerlayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:id="@+id/dist_tache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dist_tache"
+                    android:singleLine="true"
+                    android:inputType="textCapSentences|textMultiLine" />
+
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView48"
+                    android:src="@drawable/commande_photo"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/ajout_photo_reunion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ajout_photo"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:id="@+id/photo_reunion"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/contour"
+            android:text="@string/enregister"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
+

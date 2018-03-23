@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flux :"
+            android:id="@+id/flux_row"
+            android:radius="14dp"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textCapWords"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="type_transaction"
+            android:id="@+id/type_transaction"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textCapWords"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textIsSelectable="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Somme :"
+            android:id="@+id/somme_row"
+            android:radius="14dp"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:textStyle="bold" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="somme_transaction"
+            android:id="@+id/somme_transaction"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="detail_transaction"
+            android:id="@+id/detail_transaction"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+</LinearLayout>

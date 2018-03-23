@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">26dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- Button Portail dimensions -->
+    <dimen name="button_width">50dp</dimen>
+    <dimen name="button_height">90dp</dimen>
+    <dimen name="contourRadius">5dp</dimen>
+    <dimen name="dim_text">90dp</dimen>
+
+    <!-- Button Checklist VA Moteur dimensions -->
+    <dimen name="button_vam_width">120dp</dimen>
+    <dimen name="button_vam_height">120dp</dimen>
+
+
+    <!-- Fontsize -->
+    <dimen name="inf_fontsize">11sp</dimen>
+    <dimen name="normal_fontsize">13sp</dimen>
+    <dimen name="checklist_fontsize">14sp</dimen>
+    <dimen name="sup_fontsize">15sp</dimen>
+</resources>

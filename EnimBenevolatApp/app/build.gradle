@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.example.ensmr.enimbenevolatapp"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions
+            {
+                cruncherEnabled = false
+            }
+}
+
+//generation de graphes
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha2'
+    compile('com.github.ganfra:material-spinner:1.1.1') {
+        exclude group: 'com.nineoldandroids', module: 'library'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile 'com.android.support:design:24.1.1'
+    //Handle http request
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    //spotDialog
+    compile 'com.github.d-max:spots-dialog:0.4@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    //loading images from url
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //generation de graphes
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+
+}

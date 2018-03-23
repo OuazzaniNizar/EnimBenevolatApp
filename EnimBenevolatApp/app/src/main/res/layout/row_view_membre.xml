@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView20"
+            android:src="@drawable/commande_man"
+            android:layout_margin="4dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="nom membre"
+            android:id="@+id/nom_membre"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_membre"
+            android:radius="14dp"
+            android:textColor="@color/violet"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:visibility="visible"
+            android:text="ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView9"
+            android:src="@drawable/coordonnee_profession"
+            android:layout_margin="4dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="filière"
+            android:id="@+id/filiere_membre"
+            android:radius="14dp"
+            android:textColor="@color/bleu"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView33"
+            android:src="@drawable/coordonnee_phone"
+            android:layout_margin="4dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="telephone membre"
+            android:id="@+id/telephone_membre"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="center_vertical|start"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView32"
+            android:src="@drawable/commande_addition"
+            android:layout_margin="4dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Presence "
+            android:id="@+id/textView27"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="center_vertical|start"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="nb"
+            android:id="@+id/presence_membre"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView34"
+            android:src="@drawable/commande_addition"
+            android:layout_margin="4dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tâches"
+            android:id="@+id/textView29"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="center_vertical|start"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="nb"
+            android:id="@+id/taches_membre"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

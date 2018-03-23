@@ -1,0 +1,243 @@
+<resources>
+    <string name="app_name">Enim Benevolat</string>
+
+    <!-- Erreurs -->
+    <string name="erreur_authentification">Veuillez vous authentifier correctement !</string>
+    <string name="erreur_vide">Veuillez remplir tous les champs !</string>
+    <string name="erreur_connexion">    Veuillez vous connecter à internet...</string>
+    <string name="connexion_bd">Connexion au serveur...\nPatientez s\'il vous plait ! (:</string>
+
+
+    <!-- E  S  P  A  C  E      V  I  S  I  T  E  U  R  S                        E  S  P  A  C  E      V  I  S  I  T  E  U  R  S -->
+    <string name="portail_visiteur">ESPACE VISITEURS</string>
+    <string name="nous_contacter">NOUS CONTACTER</string>
+    <string name="intro_visiteur">INTRODUCTION</string>
+    <string name="portail_esprit">NOS VALEURS</string>
+    <string name="portail_contact">NOS COORDONNEES</string>
+    <string name="portail_documents">DOCUEMNTS UTILES</string>
+    <string name="portail_historique">AU FIL DU TEMPS</string>
+    <string name="portail_membre">ESPACE MEMBRES</string>
+    <string name="portail_proposition">PROPOSITIONS ET RECLAMATIONS</string>
+
+
+    <!--Propostions et réclamations -->
+    <string name="proposition_intro">Vous avez une proposition, réclamation ou suggestion que vous jugez utile à nous faire ? Soumettez la ici ! (: \nMerci pour votre contribution !</string>
+    <string name="nom">Veuillez renseigner votre nom puis prénom</string>
+    <string name="telephone">Veuillez renseigner votre N° de téléphone</string>
+    <string name="choisir">Veuillez choisir le type de note...</string>
+    <string name="note">Veuillez détailler votre note...</string>
+    <string name="enregister">ENREGISTRER</string>
+    <string-array name="reclamation_proposition" formatted="false">
+        <item>Eloge</item>
+        <item>Suggestion</item>
+        <item>Réclamation</item>
+    </string-array>
+    <string name="choisir_anonymite">Comment voulez vous envoyer la note ?</string>
+    anonymite
+    <string-array name="anonymite" formatted="false">
+        <item>Anonyme</item>
+        <item>Personnalisée</item>
+    </string-array>
+
+
+    <!-- Coordonnees -->
+    <string name="coordonne_intro">Veuillez cliquer sur l\'une des icônes pour déclencher l\'action correspondante (lancement d\'appel, envoi d\'email, visite de notre page Facebook, ouverture de la carte de géolocalisation, gallerie de photo)</string>
+    <string name="coordonne_phone">Hamza Hamdan : 06 78 42 43 50</string>
+    <string name="coordonne_mail">enimbenevolat@gmail.com</string>
+    <string name="coordonne_fb">facebook.com/EnimBenevolat/</string>
+    <string name="coordonne_adresse">Rue Haj Ahmed Cherkaoui B.P.753 Rabat-Agdal</string>
+    <string name="coordonnees_icon_reperage">Cliquez sur l\'une des deux icônes sur la carte pour vous repérer !</string>
+    <string name="coordonne_ensmr">Ecole Nationale Supérieure des Mines de Rabat</string>
+
+
+    <!-- NOS VALEURS -->
+    <string name="intro_valeurs">Cet espace rassemble l\'ensemble des valeurs sur lesquels est fondé notre club.</string>
+
+
+    <!-- DOCUMENTS -->
+    <string name="intro_documents">Vous trouvez sur ce portail des documents qui vous donnerons une idée de plus près sur les activités que nous faisons et le cadre dans lequel nous travaillons, bonne lecture ! (:</string>
+    <string name="loi_aeenim">Règlement interieur de l\'AEENIM (650Ko)</string>
+    <string name="rapport_activite_2015">Rapport d\'activités 2014-2015</string>
+    <string name="rapport_activite_teambuilding2">Rapport d\'activité TeamBuilding 2 (1,7Mo)</string>
+    <string name="rapport_activite_caravane4">Rapport d\'activité Caravane Al Khayr 4 (2,1Mo)</string>
+
+
+    <!-- login_identification -->
+    <string name="title_activity_login">IDENTIFICATION</string>
+    <string name="connexion">Connectez-vous</string>
+    <string name="absence_compte">Vous n\'avez pas encore créé votre compte ? </string>
+
+
+    <!-- registration_inscription -->
+    <string name="title_activity_registration">INSCRIPTION</string>
+    <string name="email">Votre Email</string>
+    <string name="mot_de_passe">Votre Mot de passe</string>
+    <string name="profession">Veuillez renseigner votre filière</string>
+    <string name="inscription">Inscrivez-vous</string>
+    <string name="presence_compte">Vous avez déjà un compte ? Identifiez-vous !</string>
+    <string name="authentifiant">Authentifiant</string>
+    <string name="creation_compte">Merci, votre compte a été bien créé !</string>
+    <string-array name="profession" formatted="false">
+        <item>G. Electromécanique</item>
+        <item>G. Energetique</item>
+        <item>G. Industriel</item>
+        <item>G. Hydrogéotechnique</item>
+        <item>G. Ingénierie SC</item>
+        <item>G. MCQ</item>
+        <item>G. MSIP</item>
+        <item>G. IP</item>
+        <item>G. ESI</item>
+        <item>G. AESSS</item>
+    </string-array>
+    <string name="promo">Vous êtes de la promo...</string>
+    <string-array name="promo" formatted="false">
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+    <!-- E  S  P  A  C  E          R  E  S  P  O  N  S  A  B  L  E                E  S  P  A  C  E          R  E  S  P  O  N  S  A  B  L  E -->
+
+    <!-- ajout_action -->
+    <string name="ajout_historique">AJOUTER UNE ACTION A L\'HISTORIQUE</string>
+    <string name="intro_action">Choisissez soigneusement les photos que vous allez uploader... Merci ! (:</string>
+    <string name="action_details">Détails de l\'action</string>
+    <string name="nom_action">Nommer l\'action</string>
+    <string name="date_action">Date de l\'action</string>
+    <string name="choisir_categorie_action">Choisissez un tag de l\'action</string>
+    <string-array name="categorie_action" formatted="false">
+        <item>Action humanitaire</item>
+        <item>Education</item>
+        <item>Formation</item>
+        <item>Divertissement</item>
+    </string-array>
+
+    <!-- ajout_transaction -->
+    <string name="crediter_debiter">DEBITER/CREDITER LA TRESORERIE</string>
+    <string name="type_transaction">Veuillez préciser le type de la transaction</string>
+    <string name="details_transaction">Veuillez ajouter des détails sur la transaction</string>
+    <string name="somme_transaction">Somme de la transaction</string>
+    <string name="intro_transaction">Prenez du temps pour justifier votre transaction, n\'omettez aucun détail, cela facilitera davantage la gestion de la trésorerie... Merci ! (:</string>
+    <string name="ajout_photo">Ajouter une photo</string>
+    <string name="afficher_recap">Afficher récapitulatif</string>
+    <string name="type_photo">Pour des raisons de bon fonctionnement de l\'opération de stockage d\'image veuillez utiliser des prises d\'écran (screenshot) des photos originales.</string>
+    <string-array name="type_transaction" formatted="false">
+        <item>Crédit (-)</item>
+        <item>Débit (+)</item>
+    </string-array>
+
+    <!-- ajout_contact -->
+    <string name="renseignements">Renseignements supplémantaires</string>
+    <string name="choisir_domaine">Domaine d\'activité</string>
+    <string name="telephone_contact">N° de Téléphone du contact</string>
+    <string name="nom_contact">Nom du contact</string>
+    <string name="afficher_detail">Afficher les détails</string>
+    <string name="cacher_detail">Cacher les détails</string>
+    <string name="ajout_contact">AJOUTER UN CONTACT</string>
+    <string-array name="domaine" formatted="false">
+        <item>Association</item>
+        <item>Ministère</item>
+        <item>Organisme étatique</item>
+        <item>Société</item>
+        <item>Logistique</item>
+        <item>Evenementiel</item>
+        <item>imprimerie</item>
+        <item>Presse</item>
+        <item>Médecin</item>
+        <item>Lauréat(e)</item>
+        <item>Etudiant(e)</item>
+        <item>Particulier</item>
+    </string-array>
+
+
+    <!-- ajout_pv -->
+    <string name="ajout_pv">AJOUTER UN PROCES VERBAL</string>
+    <string name="intro_pv">Ce portail sert d\'interface pour ajouter un procès verbal à la table des PV, veuillez prendre le temps de remplir le corps du PV en n\'omettant aucun détail !\nLes réunions générales et les réunions de cellules seront visibles par tous les membres, les autres réunions ne seront visibles que pour les responsables</string>
+    <string name="nombre_presents">Nombre présents</string>
+    <string name="num_reunion">N° Réunion</string>
+    <string name="dist_tache">Distribution de tâches</string>
+    <string name="detail_pv">PV de la réunion</string>
+    <string name="date_pv">Date et lieu de la réunion</string>
+    <string name="contexte_pv">Ordre du jour</string>
+    <string name="type_reunion">Veuillez préciser le type de la réunion</string>
+    <string-array name="type_reunion" formatted="false">
+        <item>Réunion Générale</item>
+        <item>Réunion de Cellule</item>
+        <item>Autre réunion</item>
+    </string-array>
+    <string-array name="choix_activite" formatted="false">
+        <item>1ère activité</item>
+        <item>2ème activité</item>
+        <item>3ème activité</item>
+        <item>4ème activité</item>
+        <item>5ème activité</item>
+        <item>6ème activité</item>
+    </string-array>
+
+
+    <!-- ajout-stock -->
+    <string name="portail_ajout_stock">AJOUTER/RETIRER DU STOCK</string>
+    <string name="intro_stock">Ce portail sert d\'interface pour gérer le flux et l\'inventaire du stock, veuillez prendre le temps de remplir le corps du formulaire en n\'omettant aucun détail !</string>
+    <string name="stock_provenance">Provenance</string>
+    <string name="_detail_composant">Inventaire des composants</string>
+    <string name="type_stock">Veuillez choisir le sens du flux</string>
+    <string-array name="stock" formatted="false">
+        <item>Ajouté au stock</item>
+        <item>Retiré du stock</item>
+    </string-array>
+
+
+    <!-- ANNUAIRE DES CONTACTS -->
+    <string name="annuaire_contacts">ANNUAIRE DES CONTACTS</string>
+    <string-array name="choix_contact" formatted="false">
+        <item>Modifier le contact</item>
+        <item>Appeler le contact</item>
+        <item>Supprimer le contact (irréversible)</item>
+    </string-array>
+
+    <!-- activity CONNSULTER PV -->
+    <string name="consulter_pv">CONSULTER LES PVS DES REUNIONS</string>
+    <string-array name="choix_pv" formatted="false">
+        <item>Afficher la photo</item>
+        <item>Supprimer le PV (irréversible)</item>
+    </string-array>
+
+
+    <string name="consulter_tresorerie">CONSULTER LA TRESORERIE</string>
+
+    <string name="consulter_historique">CONSULTER LES ACTIONS DU CLUB</string>
+
+
+    <!-- activity CONNSULTER LISTE DES MEMBRES -->
+    <string name="liste_membres">LISTE DES MEMBRES</string>
+    <string name="consulter_membre">CONSULTER LA LISTE DES MEMBRES</string>
+    <string-array name="choix_membre" formatted="false">
+        <item>Envoyer message au membre</item>
+        <item>Appeler le membre</item>
+        <item>Supprimer le compte du membre</item>
+        <item>Incrémenter le nombre de tâches réalisées</item>
+        <item>Incrémenter le nombre de présence</item>
+    </string-array>
+    <string name="choix_tranche">Envoyer SMS aux membres...</string>
+    <string-array name="choix_tranche" formatted="false">
+        <item>1-50</item>
+        <item>51-100</item>
+        <item>101-150</item>
+        <item>151-fin</item>
+    </string-array>
+
+    <string name="consulter_stock">CONSULTER LE STOCK</string>
+    <string name="consulter_proposition">CONSULTER LES PROPOSITIONS</string>
+    <string name="intro_membre">INTRODUCTION MEMBRE</string>
+    <string name="portail_respo">ESPACE RESPONSABLES</string>
+    <string name="fermer_session">FERMER LA SESSION</string>
+    <string name="devrouillage_reussi">Vous avez réussi à dévrouiller le portail responsable ! (:</string>
+    <string name="lieu">Veuillez préciser le lieu</string>
+    <string name="intro_contact">intro contact</string>
+    <string name="erreur_absence_fichier">Vous n\'avez pas encore créer le fichier correspondant !</string>
+
+</resources>

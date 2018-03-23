@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView29"
+            android:src="@drawable/commande_man"
+            android:layout_margin="4dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nom_contact"
+            android:id="@+id/nom_contact"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#A8A8A8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_contact"
+            android:radius="14dp"
+            android:textColor="@color/gris"
+            android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:visibility="invisible"
+            android:text="ID" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_layout"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView40"
+                android:src="@drawable/coordonnee_profession"
+                android:layout_margin="4dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:shadowColor="#A8A8A8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/choisir_domaine"
+                android:id="@+id/organisme"
+                android:radius="14dp"
+                android:textColor="@color/bleu"
+                android:gravity="fill_horizontal|center_vertical|start|fill_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView31"
+                android:src="@drawable/coordonnee_phone"
+                android:layout_margin="4dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:shadowColor="#A8A8A8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/telephone_contact"
+                android:id="@+id/telephone_contact"
+                android:radius="14dp"
+                android:textColor="@color/gris"
+                android:gravity="center_vertical|start"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView30"
+                android:src="@drawable/commande_report"
+                android:layout_margin="4dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:shadowColor="#A8A8A8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/renseignements"
+                android:id="@+id/renseignements"
+                android:radius="14dp"
+                android:textColor="@color/gris"
+                android:gravity="center_vertical|start"
+                android:layout_weight="0"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

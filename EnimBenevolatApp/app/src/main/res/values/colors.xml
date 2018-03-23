@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#9f9f9f</color>
+    <color name="colorPrimaryDark">#737373</color>
+    <color name="colorAccent">#009fe3</color>
+
+    <color name="buttoncolor">#45c4fa</color>
+    <color name="rose">#FF4081</color>
+    <color name="grenat">#801600</color>
+    <color name="grenat1">#5e2114</color>
+    <color name="violet">#a40efc</color>
+
+    <color name="orange">#f26522</color>
+    <color name="bleu">#45c4fa</color>
+
+    <color name="gris">#737373</color>
+    <color name="noir">#000000</color>
+    <color name="blanc">#ffffff</color>
+</resources>

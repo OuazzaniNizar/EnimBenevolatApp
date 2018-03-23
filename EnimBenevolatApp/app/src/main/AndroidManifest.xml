@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ensmr.enimbenevolatapp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/enibolat_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EspaceVisiteur"
+            android:theme="@style/AppThemePortail" />
+        <activity android:name=".VisiteurPropositions" />
+        <activity
+            android:name=".MembreRegistration"
+            android:theme="@style/AppThemeRemplissage" />
+        <activity
+            android:name=".MembreLogin"
+            android:theme="@style/AppThemeRemplissage" />
+        <activity android:name=".VisiteurDocuments" />
+        <activity android:name=".VisiteurCoordonnees" />
+        <activity android:name=".VisiteurValeurs" />
+        <activity android:name=".ViewFullImage" />
+        <activity
+            android:name=".EspaceMembre"
+            android:theme="@style/AppThemePortail" />
+        <activity
+            android:name=".EspaceResponsable"
+            android:theme="@style/AppThemePortail" />
+        <activity
+            android:name=".RespoAjoutContact"
+            android:theme="@style/AppThemeRemplissage" />
+        <activity
+            android:name=".RespoAjoutHistorique"
+            android:theme="@style/AppThemeRemplissage" />
+        <activity
+            android:name=".RespoAjoutTransaction"
+            android:theme="@style/AppThemeRemplissage" />
+        <activity
+            android:name=".RespoAjoutPv"
+            android:theme="@style/AppThemeRemplissage" />
+        <activity
+            android:name=".RespoAjoutStock"
+            android:theme="@style/AppThemeRemplissage" />
+        <activity
+            android:name=".RespoConsulterTresorerie"
+            android:theme="@style/AppThemeAffichage" />
+        <activity
+            android:name=".RespoAnnuaireContact"
+            android:theme="@style/AppThemeAffichage" />
+        <activity
+            android:name=".RespoModifContact"
+            android:theme="@style/AppThemeRemplissage" />
+        <activity
+            android:name=".ConsulterMembres"
+            android:theme="@style/AppThemeAffichage" />
+        <activity android:name=".RespoConsulterPV" />
+        <activity android:name=".RespoConsulterHistorique" />
+        <activity android:name=".RespoConsulterStock" />
+        <activity android:name=".RespoConsulterPropositions" />
+        <activity android:name=".RespoCaravane"></activity>
+    </application>
+
+</manifest>

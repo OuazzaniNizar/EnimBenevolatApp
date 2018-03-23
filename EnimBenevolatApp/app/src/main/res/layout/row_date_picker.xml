@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView29"
+            android:src="@drawable/coordonnee_adresse"
+            android:layout_margin="4dp"
+            android:layout_gravity="center" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/lieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lieu"
+                android:singleLine="true"
+                android:inputType="textCapWords" />
+
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <DatePicker xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/myDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>
